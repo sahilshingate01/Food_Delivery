@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feastro - Fresh Food Delivered Fast</title>
+    <meta name="description"
+        content="Order delicious food from your favorite restaurants. Fast delivery, fresh ingredients, incredible taste.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <div class="logo">
+                <span class="logo-icon">🍽️</span>
+                <span class="logo-text">Feast<span class="accent">ro</span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary">Order Now</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">🎉 Free delivery on orders over $30</span>
+                <h1 class="hero-title">
+                    Delicious Food,
+                    <span class="gradient-text">Delivered Fast</span>
+                </h1>
+                <p class="hero-description">
+                    Experience culinary excellence delivered straight to your door.
+                    Fresh ingredients, expert chefs, and lightning-fast delivery.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" onclick="scrollToSection('menu')">
+                        Explore Menu
+                    </button>
+                    <button class="btn btn-secondary btn-large">
+                        <span>▶</span> Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Restaurant Partners</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9★</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <img src="images/food-1.jpg" alt="Delicious burger" id="heroImage1">
+                </div>
+                <div class="floating-card card-2">
+                    <img src="images/food-2.jpg" alt="Fresh salad" id="heroImage2">
+                </div>
+                <div class="floating-card card-3">
+                    <img src="images/food-3.jpg" alt="Tasty pizza" id="heroImage3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Popular Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <h3>Burgers</h3>
+                    <p>125+ items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍕</div>
+                    <h3>Pizza</h3>
+                    <p>89+ items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍜</div>
+                    <h3>Asian</h3>
+                    <p>156+ items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥗</div>
+                    <h3>Healthy</h3>
+                    <p>78+ items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍰</div>
+                    <h3>Desserts</h3>
+                    <p>92+ items</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥤</div>
+                    <h3>Drinks</h3>
+                    <p>64+ items</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Dishes</h2>
+                <p class="section-subtitle">Hand-picked favorites from our top-rated restaurants</p>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/dish-1.jpg" alt="Gourmet Burger" id="dish1">
+                        <div class="menu-badge">Popular</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Gourmet Burger Deluxe</h3>
+                            <span class="rating">4.8 ⭐</span>
+                        </div>
+                        <p class="menu-description">Premium beef patty with artisan cheese and special sauce</p>
+                        <div class="menu-footer">
+                            <span class="price">$14.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/dish-2.jpg" alt="Margherita Pizza" id="dish2">
+                        <div class="menu-badge chef-special">Chef's Special</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Margherita Pizza</h3>
+                            <span class="rating">4.9 ⭐</span>
+                        </div>
+                        <p class="menu-description">Fresh basil, mozzarella, and tomato on crispy crust</p>
+                        <div class="menu-footer">
+                            <span class="price">$16.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/dish-3.jpg" alt="Ramen Bowl" id="dish3">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Spicy Ramen Bowl</h3>
+                            <span class="rating">4.7 ⭐</span>
+                        </div>
+                        <p class="menu-description">Rich broth with noodles, egg, and fresh vegetables</p>
+                        <div class="menu-footer">
+                            <span class="price">$12.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/dish-4.jpg" alt="Caesar Salad" id="dish4">
+                        <div class="menu-badge healthy">Healthy</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Classic Caesar Salad</h3>
+                            <span class="rating">4.6 ⭐</span>
+                        </div>
+                        <p class="menu-description">Crisp romaine, parmesan, croutons, and caesar dressing</p>
+                        <div class="menu-footer">
+                            <span class="price">$9.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/dish-5.jpg" alt="Sushi Platter" id="dish5">
+                        <div class="menu-badge chef-special">Chef's Special</div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Premium Sushi Platter</h3>
+                            <span class="rating">5.0 ⭐</span>
+                        </div>
+                        <p class="menu-description">Fresh salmon, tuna, and chef's selection rolls</p>
+                        <div class="menu-footer">
+                            <span class="price">$24.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/dish-6.jpg" alt="Chocolate Cake" id="dish6">
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span class="rating">4.8 ⭐</span>
+                        </div>
+                        <p class="menu-description">Warm chocolate cake with molten center and ice cream</p>
+                        <div class="menu-footer">
+                            <span class="price">$7.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get your favorite food in 3 simple steps</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📱</div>
+                    <h3>Choose Your Meal</h3>
+                    <p>Browse our extensive menu and select from hundreds of delicious options</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">💳</div>
+                    <h3>Place Your Order</h3>
+                    <p>Easy checkout with secure payment options and real-time tracking</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🚀</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Your food arrives fresh and hot in 30 minutes or less</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "The best food delivery service I've ever used! The food always arrives hot and fresh. Highly
+                        recommend!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨</div>
+                        <div>
+                            <div class="author-name">Michael Chen</div>
+                            <div class="author-role">Regular Customer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Amazing variety of restaurants and cuisines. The app is super easy to use and delivery is
+                        lightning fast!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👩</div>
+                        <div>
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-role">Food Enthusiast</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Customer service is outstanding! They resolved my issue immediately. Will definitely order
+                        again!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👨</div>
+                        <div>
+                            <div class="author-name">James Wilson</div>
+                            <div class="author-role">Happy Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Order?</h2>
+                <p>Join thousands of satisfied customers and experience the best food delivery service today!</p>
+                <button class="btn btn-large btn-white" onclick="scrollToSection('menu')">
+                    Start Ordering Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <span class="logo-icon">🍽️</span>
+                        <span class="logo-text">Feast<span class="accent">ro</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Delivering happiness, one meal at a time. Fresh food, fast delivery, incredible taste.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>📧 support@foodhub.com</li>
+                        <li>📞 +1234567890</li>
+                        <li>📍 Dy Patil Road Pune</li>
+                        <li>🕐 24/7 Available</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Feastro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
