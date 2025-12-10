@@ -74,7 +74,7 @@ Getting Feastro running locally is as easy as ordering takeout:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/feastro.git
+git clone https://github.com/sahilshingate01/feastro.git
 
 # Navigate to the project
 cd feastro
