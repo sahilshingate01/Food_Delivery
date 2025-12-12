@@ -202,7 +202,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Got questions? Want to collaborate? Reach out!
 
-**Project Link:** [https://github.com/yourusername/feastro](https://github.com/yourusername/feastro)
+**Project Link:** [https://festro-zeta.vercel.app/]
 
 ---
 
